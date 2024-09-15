@@ -1,0 +1,49 @@
+body {
+    background: #343849;
+    padding-top: 50px;
+    
+}
+
+.container {
+    max-width: 1345px;
+    margin: 0 auto;
+}
+
+header {
+    ul {
+        li {
+            margin-right: 45px;
+            a {
+                font-family: "Raleway", sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                color: #fff;
+            }
+        }
+        li:last-child {
+            margin-right: 0;
+        }
+    }
+    .login {
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #fff;
+        margin-left: 104px;
+    }
+    .register {
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #fff;
+        margin-left: 40px;
+        box-shadow: 0 4px 25px 0 rgba(240, 68, 81, 0.25);
+        background: #f04451;
+    }
+}
+
+main {
+     .swiper {
+        max-height: 74.2vh;
+     }
+}
