@@ -43,7 +43,43 @@ header {
 }
 
 main {
+    margin-top: 147px;
      .swiper {
         max-height: 74.2vh;
+        .first {
+            h1 {
+                font-family: "Raleway", sans-serif;
+                font-weight: 600;
+                font-size: 64px;
+                line-height: 110%;
+                text-transform: uppercase;
+                color: #fff;
+            }
+            &__subtitle {
+                font-family: "Raleway", sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 150%;
+                text-align: left;
+                color: #fff;
+                opacity: 0.5;
+            }
+            &-lists {
+                ul {
+                    li {
+                        list-style: disc;
+                        color: #f04451;
+                        span {
+                            font-family: "Raleway", sans-serif;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 140%;
+                            color: #fff;
+                            opacity: 0.75;
+                        }
+                    }
+                }
+            }
+        }
      }
 }

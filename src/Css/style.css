@@ -37,6 +37,38 @@ header .register {
   background: #f04451;
 }
 
+main {
+  margin-top: 147px;
+}
 main .swiper {
   max-height: 74.2vh;
+}
+main .swiper .first h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 110%;
+  text-transform: uppercase;
+  color: #fff;
+}
+main .swiper .first__subtitle {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: left;
+  color: #fff;
+  opacity: 0.5;
+}
+main .swiper .first-lists ul li {
+  list-style: disc;
+  color: #f04451;
+}
+main .swiper .first-lists ul li span {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #fff;
+  opacity: 0.75;
 }/*# sourceMappingURL=style.css.map */
