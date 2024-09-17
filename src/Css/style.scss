@@ -1,7 +1,9 @@
 body {
     background: #343849;
     padding-top: 50px;
-    
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
 }
 
 .container {
@@ -42,11 +44,25 @@ header {
     }
 }
 
+.swiper-pagination {
+    position: absolute;
+    left: 50px !important;
+    top: 50% !important;
+    transform: translate(0, -50%);
+}
+.swiper-pagination-bullet {
+    max-width: 2.1875rem;
+    max-height: 2.1875rem;
+}
+.swiper-pagination-bullet-active {
+    background: white;
+}
 main {
-    margin-top: 147px;
      .swiper {
-        max-height: 74.2vh;
+        max-height: 67vh;
         .first {
+            padding-top: 147px;
+            position: relative;
             h1 {
                 font-family: "Raleway", sans-serif;
                 font-weight: 600;
@@ -79,6 +95,34 @@ main {
                         }
                     }
                 }
+            }
+            &-buttons {
+                &__connect {
+                    font-family: "Raleway", sans-serif;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 160%;
+                    letter-spacing: 0.04em;
+                    color: #fff;
+                    box-shadow: 0 4px 25px 0 rgba(240, 68, 81, 0.25);
+                    background: #f04451;
+                }
+                &__about {
+                    font-family: "Raleway", sans-serif;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 160%;
+                    letter-spacing: 0.04em;
+                    color: #fff;
+                    border: 1px solid #fff;
+                }
+            }
+            &__pres {
+                font-family: "Raleway", sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                color: #fff;
+                opacity: 0.5;
             }
         }
      }
