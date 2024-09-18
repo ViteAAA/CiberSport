@@ -2,13 +2,14 @@ body {
   background: #343849;
   padding-top: 50px;
   max-height: 100vh;
-  overflow: hidden;
+  overflow-y: hidden;
   position: relative;
 }
 
 .container {
   max-width: 1345px;
   margin: 0 auto;
+  overflow: visible;
 }
 
 header ul li {
@@ -56,12 +57,25 @@ header .register {
   background: white;
 }
 
+.swiper {
+  overflow-x: visible;
+}
+
 main .swiper {
   max-height: 67vh;
+}
+main .swiper-slide .first__pres {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  opacity: 0.5;
 }
 main .swiper .first {
   padding-top: 147px;
   position: relative;
+  overflow-x: visible;
+  overflow-y: hidden;
 }
 main .swiper .first h1 {
   font-family: "Raleway", sans-serif;
@@ -111,10 +125,30 @@ main .swiper .first-buttons__about {
   color: #fff;
   border: 1px solid #fff;
 }
-main .swiper .first__pres {
+main .swiper .second {
+  padding-top: 244px;
+}
+main .swiper .second-right h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 150%;
+  color: #fff;
+}
+main .swiper .second-right__subtitle {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 18px;
+  line-height: 140%;
   color: #fff;
-  opacity: 0.5;
+}
+main .swiper .second-right__btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  box-shadow: 0 4px 25px 0 rgba(240, 68, 81, 0.25);
+  background: #f04451;
 }/*# sourceMappingURL=style.css.map */
