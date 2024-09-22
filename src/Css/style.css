@@ -41,11 +41,12 @@ header .register {
   background: #f04451;
 }
 
-.swiper-pagination {
+.mainp {
   position: absolute;
   left: 50px !important;
   top: 50% !important;
   transform: translate(0, -50%);
+  z-index: 0;
 }
 
 .swiper-pagination-bullet {
@@ -151,4 +152,57 @@ main .swiper .second-right__btn {
   color: #fff;
   box-shadow: 0 4px 25px 0 rgba(240, 68, 81, 0.25);
   background: #f04451;
+}
+main .swiper .third {
+  padding-left: 68px;
+  padding-right: 68px;
+  padding-top: 162px;
+}
+main .swiper .third__title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 150%;
+  text-align: center;
+  color: #fff;
+}
+main .swiper .third-inner {
+  max-width: 275px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  padding-top: 83px;
+  padding-bottom: 105px;
+}
+main .swiper .third-inner h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  color: #fff;
+  text-align: center;
+}
+main .swiper .third-inner .swiper {
+  margin-top: 20px;
+  overflow: hidden;
+}
+main .swiper .third-inner .swiper .swiper-slide p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  color: #fff;
+  opacity: 0.75;
+}
+main .swiper .third-inner .swiper-pagination {
+  position: absolute;
+  bottom: 82px;
+}
+main .swiper .third-inner .swiper-button-next::after {
+  font-size: 16px;
+  color: white;
+}
+main .swiper .third-inner .swiper-button-prev::after {
+  font-size: 16px;
+  color: white;
 }/*# sourceMappingURL=style.css.map */

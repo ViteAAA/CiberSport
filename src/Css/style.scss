@@ -45,11 +45,12 @@ header {
     }
 }
 
-.swiper-pagination {
+.mainp {
     position: absolute;
     left: 50px !important;
     top: 50% !important;
     transform: translate(0, -50%);
+    z-index: 0;
 }
 .swiper-pagination-bullet {
     max-width: 2.1875rem;
@@ -160,6 +161,61 @@ main {
                     color: #fff;
                     box-shadow: 0 4px 25px 0 rgba(240, 68, 81, 0.25);
                     background: #f04451;
+                }
+            }
+        }
+        .third {
+            padding-left: 68px;
+            padding-right: 68px;
+            padding-top: 162px;
+            &__title {
+                font-family: "Raleway", sans-serif;
+                font-weight: 600;
+                font-size: 46px;
+                line-height: 150%;
+                text-align: center;
+                color: #fff;
+            }
+            &-inner {
+                max-width: 275px;
+                border: 2px solid rgba(255, 255, 255, 0.5);
+                border-radius: 15px;
+                padding-top: 83px;
+                padding-bottom: 105px;
+                h2 {
+                    font-family: "Raleway", sans-serif;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 150%;
+                    color: #fff;
+                    text-align: center;
+                }
+                .swiper {
+                    margin-top: 20px;
+                    overflow: hidden;
+                    .swiper-slide {
+                        p {
+                            font-family: "Raleway", sans-serif;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 140%;
+                            text-align: center;
+                            color: #fff;
+                            opacity: 0.75;
+                        }
+                    }
+                    &-pagination {
+                        position: absolute;
+                        bottom: 82px;
+                    }
+                    &-button-next::after {
+                        font-size: 16px;
+                        color: white;
+                    }
+                    &-button-prev::after {
+                        font-size: 16px;
+                        color: white;
+                    }
                 }
             }
         }
