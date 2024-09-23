@@ -153,6 +153,28 @@ main .swiper .second-right__btn {
   box-shadow: 0 4px 25px 0 rgba(240, 68, 81, 0.25);
   background: #f04451;
 }
+main .swiper .fourth h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 150%;
+  color: #fff;
+}
+main .swiper .fourth h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #fff;
+}
+main .swiper .fourth p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #fff;
+  opacity: 0.75;
+}
 main .swiper .third {
   padding-left: 68px;
   padding-right: 68px;

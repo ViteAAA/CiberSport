@@ -164,6 +164,30 @@ main {
                 }
             }
         }
+        .fourth {
+            h1 {
+                font-family: "Raleway", sans-serif;
+                font-weight: 600;
+                font-size: 46px;
+                line-height: 150%;
+                color: #fff;
+            }
+            h2 {
+                font-family: "Raleway", sans-serif;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 150%;
+                color: #fff;
+            }
+            p {
+                font-family: "Raleway", sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 140%;
+                color: #fff;
+                opacity: 0.75;
+            }
+        }
         .third {
             padding-left: 68px;
             padding-right: 68px;
