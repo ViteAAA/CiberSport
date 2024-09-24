@@ -243,5 +243,31 @@ main {
                 }
             }
         }
+        .fifth {
+            h1 {
+                font-family: "Raleway", sans-serif;
+                font-weight: 600;
+                font-size: 46px;
+                line-height: 150%;
+                text-align: center;
+                color: #fff;
+            }
+            &-tabs {
+                &-tablist {
+                    &-tab {
+                        font-family: "Raleway", sans-serif;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 150%;
+                        text-align: center;
+                        color: #fff;
+                        opacity: 0.5;
+                        img {
+                            margin-bottom: 12px;
+                        }
+                    }
+                }
+            }
+        }
      }
 }
