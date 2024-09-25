@@ -55,3 +55,16 @@ var arena = new Swiper(".arena", {
     el: ".thirdpfo",
   },
 });
+
+//tabs 
+let tabs = document.querySelectorAll(".fifth-tabs-tablist-tab");
+
+let words = ["one", "two", "three", "four"];
+words.forEach((word) => {
+  console.log(word);
+  if (word === "two") {
+    words.shift();
+  }
+});
+
+//let tab_img = tab.querySelectorAll(".fifth-tabs-tablist-tab>img");
