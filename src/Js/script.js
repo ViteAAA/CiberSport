@@ -57,14 +57,23 @@ var arena = new Swiper(".arena", {
 });
 
 //tabs 
-let tabs = document.querySelectorAll(".fifth-tabs-tablist-tab");
+const tabs = document.querySelectorAll(".fifth-tabs-tablist-tab");
+const content = document.querySelectorAll(".fifth-tabs-content__text");
 
-let words = ["one", "two", "three", "four"];
-words.forEach((word) => {
-  console.log(word);
-  if (word === "two") {
-    words.shift();
-  }
-});
 
-//let tab_img = tab.querySelectorAll(".fifth-tabs-tablist-tab>img");
+function MousClick (e) {
+  let act_e = document.querySelector(".act");
+  let tab_img = act_e.querySelectorAll(".fifth-tabs-tablist-tab__logo");
+  tab_img.forEach(i => i.classList.toggle("hidden"));
+  tabs.forEach(item => item.classList.remove("act"));
+  e.currentTarget.classList.add("act");
+  act_e = document.querySelector(".act");
+  tab_img = act_e.querySelectorAll(".fifth-tabs-tablist-tab__logo");
+  tab_img.forEach(i => i.classList.toggle("hidden"));
+}
+
+tabs.forEach(item => item.addEventListener('click', MousClick));
+
+
+
+
