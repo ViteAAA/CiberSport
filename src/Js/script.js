@@ -70,6 +70,10 @@ function MousClick (e) {
   act_e = document.querySelector(".act");
   tab_img = act_e.querySelectorAll(".fifth-tabs-tablist-tab__logo");
   tab_img.forEach(i => i.classList.toggle("hidden"));
+
+  content.forEach(element => element.classList.add("hidden"));
+  const TabsTitleTarget = e.currentTarget.getAttribute('data-tab');
+  document.getElementById(TabsTitleTarget).classList.remove("hidden");
 }
 
 tabs.forEach(item => item.addEventListener('click', MousClick));
