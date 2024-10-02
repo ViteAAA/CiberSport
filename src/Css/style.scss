@@ -9,7 +9,6 @@ body {
 .container {
     max-width: 1345px;
     margin: 0 auto;
-    overflow: visible;
 }
 
 header {
@@ -52,15 +51,15 @@ header {
     transform: translate(0, -50%);
     z-index: 0;
 }
+.swiper-pagination {
+    z-index: 200;
+}
 .swiper-pagination-bullet {
     max-width: 2.1875rem;
     max-height: 2.1875rem;
 }
 .swiper-pagination-bullet-active {
     background: white;
-}
-.swiper {
-    overflow-x: visible;
 }
 .act {
     border: 2px solid #fff;
@@ -70,7 +69,7 @@ header {
 main {
     
      .swiper {
-        max-height: 67vh;
+        max-height: 76vh;
         &-slide {
             .first__pres {
                 font-family: "Raleway", sans-serif;
@@ -78,13 +77,13 @@ main {
                 font-size: 18px;
                 color: #fff;
                 opacity: 0.5;
+                text-align: center;
             }
         }
         .first {
             padding-top: 147px;
             position: relative;
-            overflow-x: visible;
-            overflow-y: hidden;
+            overflow: hidden;
             h1 {
                 font-family: "Raleway", sans-serif;
                 font-weight: 600;
@@ -249,6 +248,7 @@ main {
             }
         }
         .fifth {
+            position: relative;
             h1 {
                 font-family: "Raleway", sans-serif;
                 font-weight: 600;
@@ -278,6 +278,7 @@ main {
                     margin: 0 auto;
                     padding: 46px 48px;
                     border-radius: 15px;
+                    position: relative;
                     p {
                         font-family: "Raleway", sans-serif;
                         font-weight: 400;
@@ -288,6 +289,33 @@ main {
                         opacity: 0.75;
                     }
                 }
+                &-arrow {
+                    position: absolute;
+                    padding: 13.24px 19.5px;
+                    border-radius: 15px;
+                    border: 1px solid #fff;
+                    top: 48px;
+                    cursor: pointer;
+                }
+                #right {
+                    right: -86px;
+                }
+                #left {
+                    left: -86px;
+                }
+                margin-bottom: 127px;
+            }
+            &__conect {
+                font-family: "Raleway", sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                color: #fff;
+                padding: 20px 35px;
+                border-radius: 15px;
+                box-shadow: 0 4px 25px 0 rgba(240, 68, 81, 0.25);
+                background: #f04451;
+                margin-left: 50%;
+                transform: translate(-50%, 0);
             }
         }
      }

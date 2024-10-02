@@ -59,8 +59,11 @@ var arena = new Swiper(".arena", {
 //tabs 
 const tabs = document.querySelectorAll(".fifth-tabs-tablist-tab");
 const content = document.querySelectorAll(".fifth-tabs-content__text");
+const btn_r = document.querySelector("#right");
+const btn_l = document.querySelector("#left");
+let slideCount = 0;
 
-
+//function for change tab
 function MousClick (e) {
   let act_e = document.querySelector(".act");
   let tab_img = act_e.querySelectorAll(".fifth-tabs-tablist-tab__logo");
@@ -77,6 +80,61 @@ function MousClick (e) {
 }
 
 tabs.forEach(item => item.addEventListener('click', MousClick));
+
+//function for swipe tab -this to next-
+function nextSlide(e) {
+  let i = 0;
+  for(i = 0; i < tabs.length; i++) {
+    if(tabs[i].classList.contains("act")) {
+      break;
+    }
+  }
+  slideCount = i;
+  slideCount++;
+  if (slideCount >= content.length) {
+    slideCount = 0;
+  }
+  let act_e = document.querySelector(".act");
+  let tab_img = act_e.querySelectorAll(".fifth-tabs-tablist-tab__logo");
+  tab_img.forEach(i => i.classList.toggle("hidden"));
+  document.querySelector(".act").classList.remove("act");
+  tabs[slideCount].classList.add("act");
+  act_e = document.querySelector(".act");
+  tab_img = act_e.querySelectorAll(".fifth-tabs-tablist-tab__logo");
+  tab_img.forEach(i => i.classList.toggle("hidden"));
+
+  content.forEach(item => item.classList.add("hidden"));
+  content[slideCount].classList.remove("hidden");
+}
+
+//function for swipe tab -this to prev-
+function prevSlide(e) {
+  let i = 0;
+  for(i = 0; i < tabs.length; i++) {
+    if(tabs[i].classList.contains("act")) {
+      break;
+    }
+  }
+  slideCount = i;
+  slideCount--;
+  if (slideCount < 0) {
+    slideCount = content.length - 1;
+  }
+  let act_e = document.querySelector(".act");
+  let tab_img = act_e.querySelectorAll(".fifth-tabs-tablist-tab__logo");
+  tab_img.forEach(i => i.classList.toggle("hidden"));
+  document.querySelector(".act").classList.remove("act");
+  tabs[slideCount].classList.add("act");
+  act_e = document.querySelector(".act");
+  tab_img = act_e.querySelectorAll(".fifth-tabs-tablist-tab__logo");
+  tab_img.forEach(i => i.classList.toggle("hidden"));
+  
+  content.forEach(item => item.classList.add("hidden"));
+  content[slideCount].classList.remove("hidden");
+}
+
+btn_r.addEventListener("click", nextSlide);
+btn_l.addEventListener("click", prevSlide);
 
 
 

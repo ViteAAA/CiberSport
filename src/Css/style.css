@@ -9,7 +9,6 @@ body {
 .container {
   max-width: 1345px;
   margin: 0 auto;
-  overflow: visible;
 }
 
 header ul li {
@@ -49,6 +48,10 @@ header .register {
   z-index: 0;
 }
 
+.swiper-pagination {
+  z-index: 200;
+}
+
 .swiper-pagination-bullet {
   max-width: 2.1875rem;
   max-height: 2.1875rem;
@@ -58,10 +61,6 @@ header .register {
   background: white;
 }
 
-.swiper {
-  overflow-x: visible;
-}
-
 .act {
   border: 2px solid #fff;
   opacity: 1 !important;
@@ -69,7 +68,7 @@ header .register {
 }
 
 main .swiper {
-  max-height: 67vh;
+  max-height: 76vh;
 }
 main .swiper-slide .first__pres {
   font-family: "Raleway", sans-serif;
@@ -77,12 +76,12 @@ main .swiper-slide .first__pres {
   font-size: 18px;
   color: #fff;
   opacity: 0.5;
+  text-align: center;
 }
 main .swiper .first {
   padding-top: 147px;
   position: relative;
-  overflow-x: visible;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 main .swiper .first h1 {
   font-family: "Raleway", sans-serif;
@@ -234,6 +233,9 @@ main .swiper .third-inner .swiper-button-prev::after {
   font-size: 16px;
   color: white;
 }
+main .swiper .fifth {
+  position: relative;
+}
 main .swiper .fifth h1 {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
@@ -241,6 +243,9 @@ main .swiper .fifth h1 {
   line-height: 150%;
   text-align: center;
   color: #fff;
+}
+main .swiper .fifth-tabs {
+  margin-bottom: 127px;
 }
 main .swiper .fifth-tabs-tablist-tab {
   font-family: "Raleway", sans-serif;
@@ -260,6 +265,7 @@ main .swiper .fifth-tabs-content {
   margin: 0 auto;
   padding: 46px 48px;
   border-radius: 15px;
+  position: relative;
 }
 main .swiper .fifth-tabs-content p {
   font-family: "Raleway", sans-serif;
@@ -269,4 +275,30 @@ main .swiper .fifth-tabs-content p {
   text-align: center;
   color: #fff;
   opacity: 0.75;
+}
+main .swiper .fifth-tabs-arrow {
+  position: absolute;
+  padding: 13.24px 19.5px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  top: 48px;
+  cursor: pointer;
+}
+main .swiper .fifth-tabs #right {
+  right: -86px;
+}
+main .swiper .fifth-tabs #left {
+  left: -86px;
+}
+main .swiper .fifth__conect {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  padding: 20px 35px;
+  border-radius: 15px;
+  box-shadow: 0 4px 25px 0 rgba(240, 68, 81, 0.25);
+  background: #f04451;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
 }/*# sourceMappingURL=style.css.map */
