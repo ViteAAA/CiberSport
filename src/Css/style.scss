@@ -1,6 +1,5 @@
 body {
     background: #343849;
-    padding-top: 50px;
     max-height: 100vh;
     overflow-y: hidden;
     position: relative;
@@ -11,7 +10,44 @@ body {
     margin: 0 auto;
 }
 
+.span-act {
+    display: block !important;
+}
+@keyframes moreInfo {
+    0% {
+        height: 78px;
+    }
+    50% {
+        height: 70.5px;
+    }
+    100% {
+        height: 141px;
+    }
+}
+@keyframes littleInfo {
+    0% {
+        height: 141px;
+    }
+    50% {
+        height: 70.5px;
+    }
+    100% {
+        height: 78px;
+    }
+}
+.quest-act {
+    animation: 2s moreInfo forwards;
+}
+.quest-hid {
+    animation: 2s littleInfo forwards;
+}
+
+
 header {
+    position: absolute;
+    z-index: 100;
+    top: 50px;
+    width: 100%;
     ul {
         li {
             margin-right: 45px;
@@ -50,9 +86,10 @@ header {
     top: 50% !important;
     transform: translate(0, -50%);
     z-index: 0;
+    max-width: 10%;
 }
 .swiper-pagination {
-    z-index: 200;
+    z-index: 20;
 }
 .swiper-pagination-bullet {
     max-width: 2.1875rem;
@@ -69,8 +106,10 @@ header {
 main {
     
      .swiper {
-        max-height: 76vh;
+        max-height: 100vh;
+        //padding-top: 258px;
         &-slide {
+            overflow: hidden;
             .first__pres {
                 font-family: "Raleway", sans-serif;
                 font-weight: 400;
@@ -81,7 +120,7 @@ main {
             }
         }
         .first {
-            padding-top: 147px;
+            padding-top: 258px;
             position: relative;
             overflow: hidden;
             h1 {
@@ -140,7 +179,7 @@ main {
             }
         }
         .second {
-            padding-top: 244px;
+            padding-top: 355px;
             &-right {
                 h1 {
                     font-family: "Raleway", sans-serif;
@@ -195,7 +234,7 @@ main {
         .third {
             padding-left: 68px;
             padding-right: 68px;
-            padding-top: 162px;
+            padding-top: 273px;
             &__title {
                 font-family: "Raleway", sans-serif;
                 font-weight: 600;
@@ -316,6 +355,70 @@ main {
                 background: #f04451;
                 margin-left: 50%;
                 transform: translate(-50%, 0);
+            }
+        }
+        .seventh {
+            .dashes {
+                opacity: 0.15;
+                position: absolute;
+                top: -580px;
+                width: 300vh;
+                height: 2200px;
+                border-radius: 100%;
+                border: 2px white dashed;
+            }
+            &-point {
+                position: absolute;
+                left: 0;
+                //top: 490px;
+                h1 {
+                    font-family: "Raleway", sans-serif;
+                    font-weight: 100;
+                    font-size: 64px;
+                    text-align: left;
+                    color: #fff;
+                }
+                p {
+                    font-family: "Raleway", sans-serif;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 150%;
+                    color: #fff;
+                    opacity: 0.75;
+                    margin-bottom: 11px;
+                }
+            }
+        }
+        .eighth {
+            padding-top: 100px;
+            h1 {
+                font-family: "Raleway", sans-serif;
+                font-weight: 600;
+                font-size: 46px;
+                line-height: 150%;
+                text-align: left;
+                color: #fff;
+            }
+            p {
+                overflow: hidden;
+                cursor: pointer;
+                border: 1px solid #fff;
+                border-radius: 15px;
+                padding: 21px 25px;
+                font-family: "Raleway", sans-serif;
+                font-weight: 400;
+                font-size: 24px;
+                color: #fff;
+                span {
+                    display: none;
+                    margin-top: 10px;
+                    font-family: "Raleway", sans-serif;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 140%;
+                    color: #fff;
+                    opacity: 0.75;
+                }
             }
         }
      }

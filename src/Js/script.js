@@ -135,7 +135,33 @@ function prevSlide(e) {
 
 btn_r.addEventListener("click", nextSlide);
 btn_l.addEventListener("click", prevSlide);
+//end of tabs
 
+//FAQ
+const titles = document.querySelectorAll(".eighth-quest");
+let text = document.querySelectorAll(".eighth-quest>span");
+
+//document.querySelectorAll(".eighth-quest>span")
+titles.forEach(item => item.addEventListener("click", function() {
+  titles.forEach(el => el.classList.remove("quest-hid"));
+  titles.forEach(e => {
+    if (e.classList.contains("quest-act")) {
+      e.classList.add("quest-hid");
+    }
+  });
+  if (item.classList.contains("quest-act")) {
+    item.classList.remove("quest-act");
+    const n_text = item.querySelector(".eighth-quest>span");
+    n_text.classList.remove("span-act");
+  }
+  else {
+    titles.forEach(element => element.classList.remove("quest-act"));
+    text.forEach(i => i.classList.remove("span-act"));
+    const n_text = item.querySelector(".eighth-quest>span");
+    n_text.classList.add("span-act");
+    item.classList.add("quest-act");
+  }
+}));
 
 
 
