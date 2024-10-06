@@ -16,7 +16,7 @@ body {
 
 @keyframes moreInfo {
   0% {
-    height: 78px;
+    height: 80px;
   }
   50% {
     height: 70.5px;
@@ -33,7 +33,7 @@ body {
     height: 70.5px;
   }
   100% {
-    height: 78px;
+    height: 80px;
   }
 }
 .quest-act {
@@ -356,7 +356,6 @@ main .swiper .seventh .dashes {
 }
 main .swiper .seventh-point {
   position: absolute;
-  left: 0;
 }
 main .swiper .seventh-point h1 {
   font-family: "Raleway", sans-serif;
@@ -375,7 +374,7 @@ main .swiper .seventh-point p {
   margin-bottom: 11px;
 }
 main .swiper .eighth {
-  padding-top: 100px;
+  padding-top: 211px;
 }
 main .swiper .eighth h1 {
   font-family: "Raleway", sans-serif;
