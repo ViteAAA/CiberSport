@@ -47,7 +47,8 @@ body {
 header {
   position: absolute;
   z-index: 100;
-  top: 50px;
+  top: 0;
+  padding-top: 50px;
   width: 100%;
 }
 header ul li {
@@ -404,4 +405,30 @@ main .swiper .eighth p span {
   line-height: 140%;
   color: #fff;
   opacity: 0.75;
+}
+main .swiper .footer .container {
+  align-items: start;
+}
+main .swiper .footer-col {
+  padding-top: 5px;
+}
+main .swiper .footer h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  opacity: 0.5;
+  margin-bottom: 50px;
+}
+main .swiper .footer ul li {
+  margin-bottom: 40px;
+}
+main .swiper .footer ul li a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+}
+main .swiper .footer ul li:last-child {
+  margin-bottom: 0;
 }/*# sourceMappingURL=style.css.map */
