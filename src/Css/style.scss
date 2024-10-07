@@ -11,7 +11,21 @@ body {
 }
 
 .span-act {
+    opacity: 0;
     display: block !important;
+    animation: span 1s forwards;
+}
+
+@keyframes span {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 @keyframes moreInfo {
     0% {
@@ -36,10 +50,10 @@ body {
     }
 }
 .quest-act {
-    animation: 2s moreInfo forwards;
+    animation: 1s moreInfo forwards;
 }
 .quest-hid {
-    animation: 2s littleInfo forwards;
+    animation: 1s littleInfo forwards;
 }
 
 
@@ -427,9 +441,42 @@ main {
         .footer {
             .container {
                 align-items: start;
+                border-bottom:1px solid rgba(255, 255, 255, 0.25);
+            }
+            &-bot {
+                padding-top: 55px;
+                border: none !important;
+                p {
+                    font-family: "Raleway", sans-serif;
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: #fff;
+                    opacity: 0.5;
+                }
+                a {
+                    font-family: "Raleway", sans-serif;
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: #fff;
+                    opacity: 0.5;
+                }
             }
             &-col {
                 padding-top: 5px;
+                ul {
+                    li {
+                        margin-bottom: 40px;
+                        a {
+                            font-family: "Raleway", sans-serif;
+                            font-weight: 400;
+                            font-size: 18px;
+                            color: #fff;
+                        }
+                    }
+                    li:last-child {
+                        margin-bottom: 0;
+                    }
+                }
             }
             h2 {
                 font-family: "Raleway", sans-serif;
@@ -439,20 +486,7 @@ main {
                 opacity: 0.5;
                 margin-bottom: 50px;
             }
-            ul {
-                li {
-                    margin-bottom: 40px;
-                    a {
-                        font-family: "Raleway", sans-serif;
-                        font-weight: 400;
-                        font-size: 18px;
-                        color: #fff;
-                    }
-                }
-                li:last-child {
-                    margin-bottom: 0;
-                }
-            }
+            
         }
     }
 }
