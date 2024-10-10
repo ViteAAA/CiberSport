@@ -13,10 +13,10 @@ body {
 .span-act {
   opacity: 0;
   display: block !important;
-  animation: spanAct 2s forwards;
+  animation: span 1s forwards;
 }
 
-@keyframes spanAct {
+@keyframes span {
   0% {
     opacity: 0;
   }
@@ -50,11 +50,11 @@ body {
   }
 }
 .quest-act {
-  animation: 2s moreInfo forwards;
+  animation: 1s moreInfo forwards;
 }
 
 .quest-hid {
-  animation: 2s littleInfo forwards;
+  animation: 1s littleInfo forwards;
 }
 
 header {
@@ -424,9 +424,40 @@ main .swiper .eighth p span {
 }
 main .swiper .footer .container {
   align-items: start;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+main .swiper .footer-bot {
+  padding-top: 55px;
+  border: none !important;
+}
+main .swiper .footer-bot p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  opacity: 0.5;
+}
+main .swiper .footer-bot a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  opacity: 0.5;
 }
 main .swiper .footer-col {
   padding-top: 5px;
+}
+main .swiper .footer-col ul li {
+  margin-bottom: 40px;
+}
+main .swiper .footer-col ul li a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+}
+main .swiper .footer-col ul li:last-child {
+  margin-bottom: 0;
 }
 main .swiper .footer h2 {
   font-family: "Raleway", sans-serif;
@@ -435,16 +466,4 @@ main .swiper .footer h2 {
   color: #fff;
   opacity: 0.5;
   margin-bottom: 50px;
-}
-main .swiper .footer ul li {
-  margin-bottom: 40px;
-}
-main .swiper .footer ul li a {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  color: #fff;
-}
-main .swiper .footer ul li:last-child {
-  margin-bottom: 0;
 }/*# sourceMappingURL=style.css.map */
