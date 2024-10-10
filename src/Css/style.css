@@ -1,5 +1,5 @@
 body {
-  background: #343849;
+  background: #090b19;
   max-height: 100vh;
   overflow-y: hidden;
   position: relative;
@@ -11,9 +11,22 @@ body {
 }
 
 .span-act {
+  opacity: 0;
   display: block !important;
+  animation: spanAct 2s forwards;
 }
 
+@keyframes spanAct {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes moreInfo {
   0% {
     height: 80px;
@@ -96,10 +109,13 @@ header .register {
 .swiper-pagination-bullet {
   max-width: 2.1875rem;
   max-height: 2.1875rem;
+  background: white;
+  opacity: 0.25;
 }
 
 .swiper-pagination-bullet-active {
   background: white;
+  opacity: 1;
 }
 
 .act {
