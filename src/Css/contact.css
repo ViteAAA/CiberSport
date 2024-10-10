@@ -100,6 +100,18 @@ main .first a {
 main .footer .container {
   align-items: start;
 }
+main .footer .container .cont-top {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+main .footer .container .cont-bot {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #fff;
+  opacity: 0.5;
+}
 main .footer-col {
   padding-top: 5px;
 }

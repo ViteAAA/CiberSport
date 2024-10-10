@@ -102,7 +102,20 @@ main {
     .footer {
         .container {
             align-items: start;
+            .cont-top {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+            }
+            .cont-bot {
+                font-family: "Raleway", sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 150%;
+                text-align: center;
+                color: #fff;
+                opacity: 0.5;
+            }
         }
+        
         &-col {
             padding-top: 5px;
         }
