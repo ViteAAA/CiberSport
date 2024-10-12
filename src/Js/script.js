@@ -63,6 +63,7 @@ const btn_r = document.querySelector("#right");
 const btn_l = document.querySelector("#left");
 let slideCount = 0;
 
+
 //function for change tab
 function MousClick (e) {
   let act_e = document.querySelector(".act");
@@ -163,5 +164,22 @@ titles.forEach(item => item.addEventListener("click", function() {
   }
 }));
 
-
-
+//To Slide 
+let item = document.querySelectorAll('#mass');
+item.forEach(element => element.addEventListener("click", function() {
+  let i = 0;
+  for (let index = 0; index < item.length; index++) {
+    if (item[index] == element) {
+      i = index;
+      break;
+    }
+  }
+  if (i >= 3) {
+    i += 2;
+  }
+  if (i == 2) {
+    i++;
+  }
+  
+  swiper.slideTo(i);
+}))

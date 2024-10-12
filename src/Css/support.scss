@@ -84,18 +84,24 @@ main {
         p {
             font-family: "Raleway", sans-serif;
             font-weight: 400;
-            font-size: 16px;
-            color: #a2a2b9;
+            font-size: 18px;
+            line-height: 150%;
+            color: #fff;
+            max-width: 321px;
+        }
+        h2 {
+            font-family: "Raleway", sans-serif;
+            font-weight: 600;
+            font-size: 24px;
+            color: #fff;
         }
         a {
             font-family: "Raleway", sans-serif;
-            font-weight: 500;
+            font-weight: 400;
             font-size: 18px;
-            line-height: 144%;
             text-decoration: underline;
             text-decoration-skip-ink: none;
-            text-align: center;
-            color: #fafafa;
+            color: #f04451;
         }
     }
 
