@@ -24,7 +24,7 @@ body {
     opacity: 0.5;
   }
   100% {
-    opacity: 1;
+    opacity: 0.75;
   }
 }
 @keyframes moreInfo {
@@ -50,11 +50,11 @@ body {
   }
 }
 .quest-act {
-  animation: 2s moreInfo forwards;
+  animation: 1.5s moreInfo forwards;
 }
 
 .quest-hid {
-  animation: 2s littleInfo forwards;
+  animation: 1.5s littleInfo forwards;
 }
 
 header {

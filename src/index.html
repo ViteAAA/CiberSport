@@ -12,9 +12,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Css/output.css">
     <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/modal.css">
     <title>Document</title>
 </head>
 <body>
+    <div class="modal">
+        <div class="modal-block">
+            <div class="modal-block-container">
+                <h2 class="modal-block__title">
+                    Войти с помощью сервисов:
+                </h2>
+                <div class="modal-block-contacts flex">
+                    <a href="#" class="modal-block-contacts-href">
+                        <img src="Image/logo/modal-discord.svg" alt="modal-discord" class="modal-block-contacts-href__img">
+                    </a>
+                    <a href="#" class="modal-block-contacts-href">
+                        <img src="Image/logo/modal-google.svg" alt="modal-google" class="modal-block-contacts-href__img">
+                    </a>
+                    <a href="#" class="modal-block-contacts-href">
+                        <img src="Image/logo/modal-vk.svg" alt="modal-vk" class="modal-block-contacts-href__img">
+                    </a>
+                    <a href="#" class="modal-block-contacts-href">
+                        <img src="Image/logo/modal-steam.svg" alt="modal-steam" class="modal-block-contacts-href__img">
+                    </a>
+                </div>
+                <h2 class="modal-block__or">
+                    Или
+                </h2>
+                <div class="custom-field">
+                    <input id="email-field" type="email"/>
+                    <label for="email-field" class="placeholder">Enter Email</label>
+                </div>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="container flex items-center">
             <a href="#" class="logo-href"><img src="Image/Logo/Logo.svg" alt="Logo" class="logo"></a>
@@ -526,13 +557,13 @@
                                     </h2>
                                     <ul class="footer-col-list">
                                         <li class="footer-col-list-point">
-                                            <a href="#" class="footer-col-list-point__href">Поддержать проект</a>
+                                            <a href="support.html" class="footer-col-list-point__href">Поддержать проект</a>
                                         </li>
                                         <li class="footer-col-list-point">
-                                            <a href="#" class="footer-col-list-point__href">Благодарности</a>
+                                            <a href="thanks.html" class="footer-col-list-point__href">Благодарности</a>
                                         </li>
                                         <li class="footer-col-list-point">
-                                            <a href="#" class="footer-col-list-point__href">Контакты</a>
+                                            <a href="contact.html" class="footer-col-list-point__href">Контакты</a>
                                         </li>
                                     </ul>
                                     <img src="Image/img/chicken.png" alt="chicken" class="footer-col__chick mt-28">

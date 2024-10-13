@@ -1,0 +1,45 @@
+.modal {
+    z-index: 101;
+    position: absolute;
+    &-block {
+        h2 {
+            font-family: "Raleway", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 150%;
+            color: #fff;
+        }
+        &-contacts {
+            a {
+                margin-left: 15px;
+            }
+            a:first-child {
+                margin-left: 0;
+            }
+        }
+        &__or {
+            position: relative;
+            text-align: center;
+        }
+        &__or::before {
+            content: '';
+            opacity: 0.5;
+            position: absolute;
+            left: -10px;
+            top: 45%;
+            width: 105px;
+            height: 1px;
+            background: white;
+        }
+        &__or::after {
+            content: '';
+            opacity: 0.5;
+            position: absolute;
+            right: -10px;
+            top: 45%;
+            width: 105px;
+            height: 1px;
+            background: white;
+        }
+    }
+}

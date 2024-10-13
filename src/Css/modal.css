@@ -1,0 +1,41 @@
+.modal {
+  z-index: 101;
+  position: absolute;
+}
+.modal-block h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #fff;
+}
+.modal-block-contacts a {
+  margin-left: 15px;
+}
+.modal-block-contacts a:first-child {
+  margin-left: 0;
+}
+.modal-block__or {
+  position: relative;
+  text-align: center;
+}
+.modal-block__or::before {
+  content: "";
+  opacity: 0.5;
+  position: absolute;
+  left: -10px;
+  top: 45%;
+  width: 105px;
+  height: 1px;
+  background: white;
+}
+.modal-block__or::after {
+  content: "";
+  opacity: 0.5;
+  position: absolute;
+  right: -10px;
+  top: 45%;
+  width: 105px;
+  height: 1px;
+  background: white;
+}/*# sourceMappingURL=modal.css.map */
