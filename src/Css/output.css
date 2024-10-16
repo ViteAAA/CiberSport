@@ -789,6 +789,18 @@ video {
   margin-top: 50px;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-\[70px\] {
+  margin-top: 70px;
+}
+
+.mb-\[70px\] {
+  margin-bottom: 70px;
+}
+
 .block {
   display: block;
 }
@@ -815,10 +827,6 @@ video {
 
 .w-\[215px\] {
   width: 215px;
-}
-
-.max-w-\[1015px\] {
-  max-width: 1015px;
 }
 
 .max-w-\[219px\] {
@@ -942,4 +950,8 @@ video {
 
 .pt-\[211px\] {
   padding-top: 211px;
+}
+
+.pl-32 {
+  padding-left: 8rem;
 }
