@@ -138,6 +138,9 @@ main {
             }
         }
         .first {
+            background: #272937 url('../Image/img/Background.png');
+            background-repeat: no-repeat;
+            background-size: cover;
             padding-top: 258px;
             position: relative;
             overflow: hidden;
@@ -197,6 +200,9 @@ main {
             }
         }
         .second {
+            background: #222432 url('../Image/img/background-second.png');
+            background-repeat: no-repeat;
+            background-size: cover;
             padding-top: 355px;
             &-right {
                 h1 {
@@ -226,6 +232,9 @@ main {
             }
         }
         .fourth {
+            background: #1D1F2D url('../Image/img/background-third.png');
+            background-repeat: no-repeat;
+            background-size: cover;
             h1 {
                 font-family: "Raleway", sans-serif;
                 font-weight: 600;
