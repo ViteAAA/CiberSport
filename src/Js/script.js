@@ -164,7 +164,7 @@ titles.forEach(item => item.addEventListener("click", function() {
   }
 }));
 
-//To Slide 
+//To Slide For Header
 let item = document.querySelectorAll('#mass');
 item.forEach(element => element.addEventListener("click", function() {
   let i = 0;
@@ -182,4 +182,23 @@ item.forEach(element => element.addEventListener("click", function() {
   }
   
   swiper.slideTo(i);
+}))
+//To Slide For Footer
+let i = document.querySelectorAll('#mas');
+i.forEach(element => element.addEventListener("click", function() {
+  let e = 0;
+  for (let index = 0; index < i.length; index++) {
+    if (i[index] == element) {
+      e = index;
+      break;
+    }
+  }
+  if (e >= 3) {
+    e += 2;
+  }
+  if (e == 2) {
+    e++;
+  }
+  
+  swiper.slideTo(e);
 }))
