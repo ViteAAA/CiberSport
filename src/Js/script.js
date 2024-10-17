@@ -202,3 +202,12 @@ i.forEach(element => element.addEventListener("click", function() {
   
   swiper.slideTo(e);
 }))
+
+//hide header when footer
+// let slides = document.querySelectorAll(".swiper-slide");
+// slides.forEach(element => {
+//   if (element.classList.contains("footer"))
+//   {
+//     document.querySelector("header").hidden;
+//   }
+// });

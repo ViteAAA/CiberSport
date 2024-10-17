@@ -139,6 +139,9 @@ main .swiper-slide .first__pres {
   text-align: center;
 }
 main .swiper .first {
+  background: #272937 url("../Image/img/Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 258px;
   position: relative;
   overflow: hidden;
@@ -192,6 +195,9 @@ main .swiper .first-buttons__about {
   border: 1px solid #fff;
 }
 main .swiper .second {
+  background: #222432 url("../Image/img/background-second.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-top: 355px;
 }
 main .swiper .second-right h1 {
@@ -217,6 +223,11 @@ main .swiper .second-right__btn {
   color: #fff;
   box-shadow: 0 4px 25px 0 rgba(240, 68, 81, 0.25);
   background: #f04451;
+}
+main .swiper .fourth {
+  background: #1D1F2D url("../Image/img/background-third.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 main .swiper .fourth h1 {
   font-family: "Raleway", sans-serif;
