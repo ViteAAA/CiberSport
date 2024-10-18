@@ -259,6 +259,9 @@ main {
             }
         }
         .third {
+            background: #181A28 url('../Image/img/background-fourth.png');
+            background-repeat: no-repeat;
+            background-size: cover;
             padding-left: 68px;
             padding-right: 68px;
             padding-top: 273px;
@@ -314,6 +317,9 @@ main {
             }
         }
         .fifth {
+            background: #131523 url('../Image/img/background-fifth.png');
+            background-repeat: no-repeat;
+            background-size: cover;
             position: relative;
             h1 {
                 font-family: "Raleway", sans-serif;
@@ -384,7 +390,15 @@ main {
                 transform: translate(-50%, 0);
             }
         }
+        .sixth {
+            background: #0E101E url('../Image/img/background-sixth.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
         .seventh {
+            background: #090B19 url('../Image/img/background-seventh.png');
+            background-repeat: no-repeat;
+            background-size: cover;
             .dashes {
                 opacity: 0.15;
                 position: absolute;
@@ -418,6 +432,9 @@ main {
         }
         .eighth {
             padding-top: 211px;
+            background: #040614 url('../Image/img/background-eighth.png');
+            background-repeat: no-repeat;
+            background-size: cover;
             h1 {
                 font-family: "Raleway", sans-serif;
                 font-weight: 600;
@@ -451,6 +468,9 @@ main {
             }
         }
         .footer {
+            background: #00010F url('../Image/img/background-footer.png');
+            background-repeat: no-repeat;
+            background-size: cover;
             .container {
                 align-items: start;
                 .cont-top {

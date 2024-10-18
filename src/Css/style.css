@@ -252,6 +252,9 @@ main .swiper .fourth p {
   opacity: 0.75;
 }
 main .swiper .third {
+  background: #181A28 url("../Image/img/background-fourth.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-left: 68px;
   padding-right: 68px;
   padding-top: 273px;
@@ -305,6 +308,9 @@ main .swiper .third-inner .swiper-button-prev::after {
   color: white;
 }
 main .swiper .fifth {
+  background: #131523 url("../Image/img/background-fifth.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
 }
 main .swiper .fifth h1 {
@@ -373,6 +379,16 @@ main .swiper .fifth__conect {
   margin-left: 50%;
   transform: translate(-50%, 0);
 }
+main .swiper .sixth {
+  background: #0E101E url("../Image/img/background-sixth.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .swiper .seventh {
+  background: #090B19 url("../Image/img/background-seventh.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 main .swiper .seventh .dashes {
   opacity: 0.15;
   position: absolute;
@@ -403,6 +419,9 @@ main .swiper .seventh-point p {
 }
 main .swiper .eighth {
   padding-top: 211px;
+  background: #040614 url("../Image/img/background-eighth.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 main .swiper .eighth h1 {
   font-family: "Raleway", sans-serif;
@@ -432,6 +451,11 @@ main .swiper .eighth p span {
   line-height: 140%;
   color: #fff;
   opacity: 0.75;
+}
+main .swiper .footer {
+  background: #00010F url("../Image/img/background-footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 main .swiper .footer .container {
   align-items: start;
