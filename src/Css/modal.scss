@@ -1,7 +1,18 @@
 .modal {
+    width: 100%;
+    height: 100%;
     z-index: 101;
     position: absolute;
+    backdrop-filter: blur(25px);
+    background: rgba(40, 41, 55, 0.75);
     &-block {
+        margin: 0 auto;
+        max-width: 920px;
+        padding: 50px 304px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 50px;
+        backdrop-filter: blur(25px);
+        background: #272937;
         h2 {
             font-family: "Raleway", sans-serif;
             font-weight: 400;
@@ -17,6 +28,52 @@
                 margin-left: 0;
             }
         }
+        .custom-field {
+            position: relative;
+            margin-top: 25px;
+            input {
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                border-radius: 15px;
+                padding: 15px;
+                background: none;
+                font-family: "Raleway", sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 150%;
+                color: #fff;
+                width: 294px;
+            }
+            label {
+                padding: 0 3px;
+                position: absolute;
+                top: -9px;
+                left: 16px;
+                font-family: "Raleway", sans-serif;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 150%;
+                color: rgba(255, 255, 255, 0.5);
+                background: #272937;
+            }
+            p {
+                margin-top: 5px;
+                position: relative;
+                padding-left: 29px;
+                font-family: "Raleway", sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                color: #f04451;
+            }
+            p::before {
+                content: url('../Image/Logo/unfollowing_rules.svg');
+                position: absolute;
+                left: 0px;
+            }
+        }
+        .castom-field:first-child {
+            margin-top: 30px;
+        }
         &__or {
             position: relative;
             text-align: center;
@@ -25,7 +82,7 @@
             content: '';
             opacity: 0.5;
             position: absolute;
-            left: -10px;
+            left: 30px;
             top: 45%;
             width: 105px;
             height: 1px;
@@ -35,7 +92,7 @@
             content: '';
             opacity: 0.5;
             position: absolute;
-            right: -10px;
+            right: 15px;
             top: 45%;
             width: 105px;
             height: 1px;

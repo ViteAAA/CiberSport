@@ -600,6 +600,10 @@ video {
   left: -2.5rem;
 }
 
+.-right-56 {
+  right: -14rem;
+}
+
 .-right-\[287px\] {
   right: -287px;
 }
@@ -648,10 +652,6 @@ video {
   left: 691px;
 }
 
-.right-0 {
-  right: 0px;
-}
-
 .right-16 {
   right: 4rem;
 }
@@ -682,10 +682,6 @@ video {
 
 .top-\[623px\] {
   top: 623px;
-}
-
-.-right-56 {
-  right: -14rem;
 }
 
 .z-50 {
@@ -886,6 +882,10 @@ video {
   border-radius: 9999px;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-none {
   border-style: none;
 }
@@ -944,6 +944,10 @@ video {
   padding-top: 180px;
 }
 
+.pt-\[195px\] {
+  padding-top: 195px;
+}
+
 .pt-\[211px\] {
   padding-top: 211px;
 }
@@ -952,10 +956,11 @@ video {
   padding-top: 306px;
 }
 
-.pt-\[1px\] {
-  padding-top: 1px;
+.pl-4 {
+  padding-left: 1rem;
 }
 
-.pt-\[195px\] {
-  padding-top: 195px;
+.blur {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
