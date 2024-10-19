@@ -201,4 +201,5 @@ i.forEach(element => element.addEventListener("click", function() {
   }
   
   swiper.slideTo(e);
+  document.querySelector('header').style.display = 'block';
 }))

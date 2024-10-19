@@ -6,7 +6,8 @@
     backdrop-filter: blur(25px);
     background: rgba(40, 41, 55, 0.75);
     &-block {
-        margin: 0 auto;
+        height: 917px;
+        margin: 43px auto;
         max-width: 920px;
         padding: 50px 304px;
         border: 1px solid rgba(255, 255, 255, 0.5);
@@ -73,6 +74,47 @@
         }
         .castom-field:first-child {
             margin-top: 30px;
+        }
+        .checkbox-field {
+            margin-top: 25px;
+            label {
+                font-family: "Raleway", sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                color: #fff;
+                span {
+                    color: #f04451;
+                }
+            }
+        }
+        button {
+            font-family: "Raleway", sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            letter-spacing: 0.04em;
+            color: #fff;
+            box-shadow: 0 4px 25px 0 rgba(240, 68, 81, 0.25);
+            background: #f04451;
+            border-radius: 15px;
+            padding: 20px 35px;
+            margin-left: 50%;
+            transform: translate(-50%, 0);
+            margin-top: 25px;
+        }
+        .modal-acc {
+            margin-top: 15px;
+            font-family: "Raleway", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            text-align: center;
+            color: #fff;
+            span {
+                cursor: pointer;
+                color: #f04451;
+            }
         }
         &__or {
             position: relative;

@@ -16,7 +16,9 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="modal ">
+    <div class="modal relative hidden">
+        
+        <div class="modal-bg w-full h-full absolute top-0 left-0 -z-10"></div>
         <div class="modal-block">
             <div class="modal-block-container">
                 <h2 class="modal-block__title">
@@ -40,33 +42,42 @@
                     Или
                 </h2>
                 <div class="custom-field">
-                    <input id="email-field" type="email" name="email-field">
-                    <label for="email-field" class="placeholder">Enter Email</label>
+                    <input id="email-field" type="text" name="email-field">
+                    <label for="email-field" class="placeholder">Никнейм</label>
                     <p class="custom-field__rules">
                         Никнейм должен содержать от 3 до 24 латинских символов. Разрешены "_" ".".
                     </p>
                 </div>
                 <div class="custom-field">
                     <input id="email-field" type="email" name="email-field">
-                    <label for="email-field" class="placeholder">Enter Email</label>
+                    <label for="email-field" class="placeholder">Электронная почта</label>
+                </div>
+                <div class="custom-field">
+                    <input id="email-field" type="password" name="email-field">
+                    <label for="email-field" class="placeholder">Пароль</label>
                     <p class="custom-field__rules">
-                        Никнейм должен содержать от 3 до 24 латинских символов. Разрешены "_" ".".
+                        Пароль должен состоять от 6 до 18 символов, используя строчный и заглавные буквы A-z
                     </p>
                 </div>
                 <div class="custom-field">
-                    <input id="email-field" type="email" name="email-field">
-                    <label for="email-field" class="placeholder">Enter Email</label>
+                    <input id="email-field" type="password" name="email-field">
+                    <label for="email-field" class="placeholder">Повтор пароля</label>
                     <p class="custom-field__rules">
-                        Никнейм должен содержать от 3 до 24 латинских символов. Разрешены "_" ".".
+                        Пароли не совпадают
                     </p>
                 </div>
-                <div class="custom-field">
-                    <input id="email-field" type="email" name="email-field">
-                    <label for="email-field" class="placeholder">Enter Email</label>
-                    <p class="custom-field__rules">
-                        Никнейм должен содержать от 3 до 24 латинских символов. Разрешены "_" ".".
-                    </p>
+                <div class="checkbox-field pl-5 relative">
+                    <input type="checkbox" name="checkbox" id="checkbox" class="absolute left-0">
+                    <label for="checkbox">
+                        Я согласен с <span>правилами пользования</span> и <span>политикой конфиденциальности</span>
+                    </label>
                 </div>
+                <button class="modal-button">
+                    Зарегистрироваться
+                </button>
+                <p class="modal-acc">
+                    Есть аккаунт? <span>Войти</span>
+                </p>
             </div>
         </div>
     </div>
@@ -105,12 +116,12 @@
                     </a>
                 </li>
             </ul>
-            <a href="#" class="login">
+            <button class="login">
                 Войти
-            </a>
-            <a href="#" class="register py-5 px-[35px] rounded-2xl">
+            </button>
+            <button class="register py-5 px-[35px] rounded-2xl">
                 Регистрация
-            </a>
+            </button>
         </div>
     </header>
     <main>
