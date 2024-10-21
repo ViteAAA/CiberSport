@@ -16,7 +16,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="modal relative hidden">
+    <div class="modal relative ">
         
         <div class="modal-bg w-full h-full absolute top-0 left-0 -z-10"></div>
         <div class="modal-block">
@@ -38,7 +38,7 @@
                         <img src="Image/logo/modal-steam.svg" alt="modal-steam" class="modal-block-contacts-href__img">
                     </a>
                 </div>
-                <h2 class="modal-block__or pl-4">
+                <h2 class="modal-block__or mt-7">
                     Или
                 </h2>
                 <div class="custom-field">
@@ -66,9 +66,14 @@
                         Пароли не совпадают
                     </p>
                 </div>
-                <div class="checkbox-field pl-5 relative">
-                    <input type="checkbox" name="checkbox" id="checkbox" class="absolute left-0">
-                    <label for="checkbox">
+                <div class="checkbox-field relative">
+                    <div class="custom-checkbox-cont">
+                        <label class="custom-checkbox">
+                            <input type="checkbox">
+                            <div class="checkbox-box"></div>
+                        </label>
+                    </div>
+                    <label for="checkbox" class="checkbox-field__text">
                         Я согласен с <span>правилами пользования</span> и <span>политикой конфиденциальности</span>
                     </label>
                 </div>

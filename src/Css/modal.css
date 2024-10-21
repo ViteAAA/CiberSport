@@ -80,15 +80,50 @@
 .modal-block .checkbox-field {
   margin-top: 25px;
 }
-.modal-block .checkbox-field label {
+.modal-block .checkbox-field__text {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   color: #fff;
 }
-.modal-block .checkbox-field label span {
+.modal-block .checkbox-field__text span {
   color: #f04451;
+}
+.modal-block .checkbox-field .custom-checkbox-cont {
+  position: absolute;
+  top: 0;
+  left: -30px;
+}
+.modal-block .checkbox-field .custom-checkbox-cont .custom-checkbox {
+  position: relative;
+  display: flex;
+}
+.modal-block .checkbox-field .custom-checkbox-cont .custom-checkbox input[type=checkbox] {
+  display: none;
+}
+.modal-block .checkbox-field .custom-checkbox-cont .custom-checkbox .checkbox-box {
+  width: 20px;
+  height: 20px;
+  background: none;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  position: relative;
+}
+.modal-block .checkbox-field .custom-checkbox-cont .custom-checkbox .checkbox-box::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 2px;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.2s ease;
+}
+.modal-block .checkbox-field .custom-checkbox-cont .custom-checkbox input[type=checkbox]:checked + .checkbox-box::before {
+  transform: translate(-50%, -50%) scale(1);
 }
 .modal-block button {
   font-family: "Raleway", sans-serif;
@@ -121,12 +156,13 @@
 .modal-block__or {
   position: relative;
   text-align: center;
+  max-width: 294px;
 }
 .modal-block__or::before {
   content: "";
   opacity: 0.5;
   position: absolute;
-  left: 30px;
+  left: 10px;
   top: 45%;
   width: 105px;
   height: 1px;
@@ -136,7 +172,7 @@
   content: "";
   opacity: 0.5;
   position: absolute;
-  right: 15px;
+  right: 10px;
   top: 45%;
   width: 105px;
   height: 1px;
