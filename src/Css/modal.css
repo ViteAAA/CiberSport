@@ -87,13 +87,13 @@
   line-height: 150%;
   color: #fff;
 }
-.modal-block .checkbox-field__text span {
+.modal-block .checkbox-field__text a {
   color: #f04451;
 }
 .modal-block .checkbox-field .custom-checkbox-cont {
   position: absolute;
   top: 0;
-  left: -30px;
+  left: -5px;
 }
 .modal-block .checkbox-field .custom-checkbox-cont .custom-checkbox {
   position: relative;
