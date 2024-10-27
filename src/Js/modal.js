@@ -11,6 +11,9 @@ document.querySelector('.modal-bg').addEventListener("click", function () {
 document.querySelector('.register').addEventListener("click", function () {    
     document.querySelector('.modal').classList.remove('hidden');
 });
+document.querySelector('.modal-block__close').addEventListener("click", function () {    
+    document.querySelector('.modal').classList.add('hidden');
+});
 
 //add invalid for inputs
 const inputs = document.querySelectorAll("#email-field");
@@ -50,18 +53,16 @@ sumbit.addEventListener("click", function() {
                     }
                     if (inputs[i] == element && i == 3) {
                         const pas = element.value;
-                        if (inputs[i+1].value == pas) {
-                            ttext[i-1].style.display = 'block';
-                            ttext[i].style.display = 'block'; 
+                        if (inputs[i].value == pas) {
+                            ttext[i-1].style.display = 'none';
                         }
                         else {
-                            ttext[i-1].style.display = 'none';
-                            ttext[i].style.display = 'none';
+                            ttext[i-1].style.display = 'block';
                         }
                     }
                     
                 }
-                isValid = false;
+                isValid = true;
             }
             else {
                 console.log("invalid");
@@ -75,9 +76,17 @@ sumbit.addEventListener("click", function() {
                         } 
                     }
                 }
-                isValid = true;
+                isValid = false;
             }
         });  
+    }
+    if (isValid) {
+        const send = document.querySelector(".modal-block-send");
+        send.classList.add("send-anim");
+        setTimeout(() => {
+            send.classList.remove("send-anim");
+            document.querySelector('.modal').classList.add('hidden');
+        }, 3000);
     }
 })
 

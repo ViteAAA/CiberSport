@@ -1,3 +1,16 @@
+@keyframes translate {
+    
+    100% {
+        transform: translate(0, 80%);
+    }
+}
+
+.send-anim {
+    display: block;
+    animation: translate 2s forwards;
+    // transform: translate(0, 80%);
+}
+
 .modal {
     width: 100%;
     height: 100%;
@@ -14,6 +27,24 @@
         border-radius: 50px;
         backdrop-filter: blur(25px);
         background: #272937;
+        &-send {
+            backdrop-filter: blur(25px);
+            background: rgba(0, 0, 0, 0.1);
+            padding: 25px 35px;
+            border: 1px solid #fff;
+            h1 {
+                font-family: "Raleway", sans-serif;
+                font-weight: 400;
+                font-size: 24px;
+                color: #fff;
+                text-align: center;
+                span {
+                    font-size: 18px;
+                    line-height: 150%;
+                    display: block;
+                }
+            }
+        }
         h2 {
             font-family: "Raleway", sans-serif;
             font-weight: 400;
