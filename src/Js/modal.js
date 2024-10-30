@@ -20,7 +20,7 @@ const inputs = document.querySelectorAll("#email-field");
 const sumbit = document.querySelector(".modal-button");
 const ttext = document.querySelectorAll(".custom-field__rules");
 const usernamePattern = /^[A-Za-z0-9_.]{3,24}$/;
-let isValid = true;
+let isValid;
 
 // inputs.forEach(input => {
 //     input.addEventListener('invalid', () => {
@@ -37,6 +37,8 @@ let isValid = true;
 // });
 
 sumbit.addEventListener("click", function() {
+    isValid = 0;
+    console.log(isValid);
     if (document.querySelector("#checkbox").checked) {
         // Проверка обязательного поля
         inputs.forEach(element => {
@@ -51,18 +53,17 @@ sumbit.addEventListener("click", function() {
                             ttext[i].style.display = 'none';
                         }
                     }
-                    if (inputs[i] == element && i == 3) {
-                        const pas = element.value;
-                        if (inputs[i].value == pas) {
-                            ttext[i-1].style.display = 'none';
-                        }
-                        else {
-                            ttext[i-1].style.display = 'block';
-                        }
-                    }
                     
                 }
-                isValid = true;
+                const pas = inputs[2].value;
+                if (inputs[3].value == pas) {
+                    ttext[2].style.display = 'none';
+                }
+                else {
+                    ttext[2].style.display = 'block';
+                    inputs[3].style.border = '1px solid rgba(240, 68, 81, 0.5)';
+                }
+                
             }
             else {
                 console.log("invalid");
@@ -76,16 +77,21 @@ sumbit.addEventListener("click", function() {
                         } 
                     }
                 }
-                isValid = false;
             }
         });  
     }
-    if (isValid) {
+    ttext.forEach(element => {
+        if (element.style.display == 'none') {
+            isValid++;
+            console.log(isValid);
+        }
+    });
+    if (isValid == 3) {
         const send = document.querySelector(".modal-block-send");
         send.classList.add("send-anim");
         setTimeout(() => {
             send.classList.remove("send-anim");
-            document.querySelector('.modal').classList.add('hidden');
+            document.querySelector('.modal').classList.add('!hidden');
         }, 3000);
     }
 })

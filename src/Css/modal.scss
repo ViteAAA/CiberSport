@@ -18,9 +18,14 @@
     position: absolute;
     backdrop-filter: blur(25px);
     background: rgba(40, 41, 55, 0.75);
-    &-block {
+    align-items: center;
+    display: flex;
+    &-block-login {
+        height: 634px !important;
+    }
+    &-block, &-block-login {
         height: 917px;
-        margin: 43px auto;
+        margin: auto;
         max-width: 920px;
         padding: 50px 304px;
         border: 1px solid rgba(255, 255, 255, 0.5);
@@ -60,7 +65,7 @@
                 margin-left: 0;
             }
         }
-        .custom-field {
+        .custom-field, .custom-field-login {
             position: relative;
             margin-top: 25px;
             input {

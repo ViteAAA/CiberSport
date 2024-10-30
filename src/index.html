@@ -19,6 +19,66 @@
     <div class="modal relative ">
         
         <div class="modal-bg w-full h-full absolute top-0 left-0 -z-10"></div>
+        <div class="modal-block-login relative">
+            <div class="modal-block-send absolute left-[8%] -top-28  rounded-2xl hidden">
+                <h1>
+                    На указанный адрес отправлено письмо с подтверждением
+                    <span>Перейдите по ссылке в письме, чтобы привязать адрес к вашему аккаунту</span>
+                </h1>
+            </div>
+            <img src="Image/Logo/close.svg" alt="close" class="modal-block__close absolute right-[50px] top-[50px] cursor-pointer">
+            <div class="modal-block-container">
+                <h2 class="modal-block__title">
+                    Войти с помощью сервисов:
+                </h2>
+                <div class="modal-block-contacts flex">
+                    <a href="#" class="modal-block-contacts-href">
+                        <img src="Image/logo/modal-discord.svg" alt="modal-discord" class="modal-block-contacts-href__img">
+                    </a>
+                    <a href="#" class="modal-block-contacts-href">
+                        <img src="Image/logo/modal-google.svg" alt="modal-google" class="modal-block-contacts-href__img">
+                    </a>
+                    <a href="#" class="modal-block-contacts-href">
+                        <img src="Image/logo/modal-vk.svg" alt="modal-vk" class="modal-block-contacts-href__img">
+                    </a>
+                    <a href="#" class="modal-block-contacts-href">
+                        <img src="Image/logo/modal-steam.svg" alt="modal-steam" class="modal-block-contacts-href__img">
+                    </a>
+                </div>
+                <h2 class="modal-block__or mt-7">
+                    Или
+                </h2>
+                <div class="custom-field-login">
+                    <input id="email-field" type="email" name="email-field">
+                    <label for="email-field" class="placeholder">Электронная почта</label>
+                </div>
+                <div class="custom-field-login">
+                    <input id="email-field" type="password" name="email-field">
+                    <label for="email-field" class="placeholder">Пароль</label>
+                </div>
+                <div class="checkbox-field relative pl-7">
+                    <div class="custom-checkbox-cont">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" id="checkbox">
+                            <div class="checkbox-box"></div>
+                        </label>
+                    </div>
+                    <label for="checkbox" class="checkbox-field__text ">
+                        Чужой компьютер 
+                    </label>
+                </div>
+                <button class="modal-button">
+                    Войти
+                </button>
+                <p class="modal-acc">
+                    Нет аккаунта? <span>Создать</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="modal relative !hidden">
+        
+        <div class="modal-bg w-full h-full absolute top-0 left-0 -z-10"></div>
         <div class="modal-block relative">
             <div class="modal-block-send absolute left-[8%] -top-28  rounded-2xl hidden">
                 <h1>

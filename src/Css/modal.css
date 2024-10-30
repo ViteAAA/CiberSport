@@ -16,10 +16,15 @@
   -webkit-backdrop-filter: blur(25px);
           backdrop-filter: blur(25px);
   background: rgba(40, 41, 55, 0.75);
+  align-items: center;
+  display: flex;
 }
-.modal-block {
+.modal-block-login {
+  height: 634px !important;
+}
+.modal-block, .modal-block-login {
   height: 917px;
-  margin: 43px auto;
+  margin: auto;
   max-width: 920px;
   padding: 50px 304px;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -28,43 +33,43 @@
           backdrop-filter: blur(25px);
   background: #272937;
 }
-.modal-block-send {
+.modal-block-send, .modal-block-login-send {
   -webkit-backdrop-filter: blur(25px);
           backdrop-filter: blur(25px);
   background: rgba(0, 0, 0, 0.1);
   padding: 25px 35px;
   border: 1px solid #fff;
 }
-.modal-block-send h1 {
+.modal-block-send h1, .modal-block-login-send h1 {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 24px;
   color: #fff;
   text-align: center;
 }
-.modal-block-send h1 span {
+.modal-block-send h1 span, .modal-block-login-send h1 span {
   font-size: 18px;
   line-height: 150%;
   display: block;
 }
-.modal-block h2 {
+.modal-block h2, .modal-block-login h2 {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
   color: #fff;
 }
-.modal-block-contacts a {
+.modal-block-contacts a, .modal-block-login-contacts a {
   margin-left: 15px;
 }
-.modal-block-contacts a:first-child {
+.modal-block-contacts a:first-child, .modal-block-login-contacts a:first-child {
   margin-left: 0;
 }
-.modal-block .custom-field {
+.modal-block .custom-field, .modal-block .custom-field-login, .modal-block-login .custom-field, .modal-block-login .custom-field-login {
   position: relative;
   margin-top: 25px;
 }
-.modal-block .custom-field input {
+.modal-block .custom-field input, .modal-block .custom-field-login input, .modal-block-login .custom-field input, .modal-block-login .custom-field-login input {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 15px;
   padding: 15px;
@@ -76,7 +81,7 @@
   color: #fff;
   width: 294px;
 }
-.modal-block .custom-field label {
+.modal-block .custom-field label, .modal-block .custom-field-login label, .modal-block-login .custom-field label, .modal-block-login .custom-field-login label {
   padding: 0 3px;
   position: absolute;
   top: -9px;
@@ -88,7 +93,7 @@
   color: rgba(255, 255, 255, 0.5);
   background: #272937;
 }
-.modal-block .custom-field p {
+.modal-block .custom-field p, .modal-block .custom-field-login p, .modal-block-login .custom-field p, .modal-block-login .custom-field-login p {
   margin-top: 5px;
   position: relative;
   padding-left: 29px;
@@ -98,40 +103,40 @@
   line-height: 150%;
   color: #f04451;
 }
-.modal-block .custom-field p::before {
+.modal-block .custom-field p::before, .modal-block .custom-field-login p::before, .modal-block-login .custom-field p::before, .modal-block-login .custom-field-login p::before {
   content: url("../Image/Logo/unfollowing_rules.svg");
   position: absolute;
   left: 0px;
 }
-.modal-block .castom-field:first-child {
+.modal-block .castom-field:first-child, .modal-block-login .castom-field:first-child {
   margin-top: 30px;
 }
-.modal-block .checkbox-field {
+.modal-block .checkbox-field, .modal-block-login .checkbox-field {
   margin-top: 25px;
 }
-.modal-block .checkbox-field__text {
+.modal-block .checkbox-field__text, .modal-block-login .checkbox-field__text {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   color: #fff;
 }
-.modal-block .checkbox-field__text a {
+.modal-block .checkbox-field__text a, .modal-block-login .checkbox-field__text a {
   color: #f04451;
 }
-.modal-block .checkbox-field .custom-checkbox-cont {
+.modal-block .checkbox-field .custom-checkbox-cont, .modal-block-login .checkbox-field .custom-checkbox-cont {
   position: absolute;
   top: 0;
   left: -5px;
 }
-.modal-block .checkbox-field .custom-checkbox-cont .custom-checkbox {
+.modal-block .checkbox-field .custom-checkbox-cont .custom-checkbox, .modal-block-login .checkbox-field .custom-checkbox-cont .custom-checkbox {
   position: relative;
   display: flex;
 }
-.modal-block .checkbox-field .custom-checkbox-cont .custom-checkbox input[type=checkbox] {
+.modal-block .checkbox-field .custom-checkbox-cont .custom-checkbox input[type=checkbox], .modal-block-login .checkbox-field .custom-checkbox-cont .custom-checkbox input[type=checkbox] {
   display: none;
 }
-.modal-block .checkbox-field .custom-checkbox-cont .custom-checkbox .checkbox-box {
+.modal-block .checkbox-field .custom-checkbox-cont .custom-checkbox .checkbox-box, .modal-block-login .checkbox-field .custom-checkbox-cont .custom-checkbox .checkbox-box {
   width: 20px;
   height: 20px;
   background: none;
@@ -139,7 +144,7 @@
   border: 1px solid #fff;
   position: relative;
 }
-.modal-block .checkbox-field .custom-checkbox-cont .custom-checkbox .checkbox-box::before {
+.modal-block .checkbox-field .custom-checkbox-cont .custom-checkbox .checkbox-box::before, .modal-block-login .checkbox-field .custom-checkbox-cont .custom-checkbox .checkbox-box::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -151,10 +156,10 @@
   transform: translate(-50%, -50%) scale(0);
   transition: transform 0.2s ease;
 }
-.modal-block .checkbox-field .custom-checkbox-cont .custom-checkbox input[type=checkbox]:checked + .checkbox-box::before {
+.modal-block .checkbox-field .custom-checkbox-cont .custom-checkbox input[type=checkbox]:checked + .checkbox-box::before, .modal-block-login .checkbox-field .custom-checkbox-cont .custom-checkbox input[type=checkbox]:checked + .checkbox-box::before {
   transform: translate(-50%, -50%) scale(1);
 }
-.modal-block button {
+.modal-block button, .modal-block-login button {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -169,7 +174,7 @@
   transform: translate(-50%, 0);
   margin-top: 25px;
 }
-.modal-block .modal-acc {
+.modal-block .modal-acc, .modal-block-login .modal-acc {
   margin-top: 15px;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
@@ -178,16 +183,16 @@
   text-align: center;
   color: #fff;
 }
-.modal-block .modal-acc span {
+.modal-block .modal-acc span, .modal-block-login .modal-acc span {
   cursor: pointer;
   color: #f04451;
 }
-.modal-block__or {
+.modal-block__or, .modal-block-login__or {
   position: relative;
   text-align: center;
   max-width: 294px;
 }
-.modal-block__or::before {
+.modal-block__or::before, .modal-block-login__or::before {
   content: "";
   opacity: 0.5;
   position: absolute;
@@ -197,7 +202,7 @@
   height: 1px;
   background: white;
 }
-.modal-block__or::after {
+.modal-block__or::after, .modal-block-login__or::after {
   content: "";
   opacity: 0.5;
   position: absolute;
