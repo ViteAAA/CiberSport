@@ -56,6 +56,19 @@ var arena = new Swiper(".arena", {
   },
 });
 
+//cards
+
+var cards = new Swiper(".cards", {
+  slidesPerView: 5,
+  spaceBetween: 30,
+  loop: true,
+  centeredSlides: true,
+  navigation: {
+    nextEl: ".sixth__next",
+    prevEl: ".sixth__prev",
+  },
+});
+
 //tabs 
 const tabs = document.querySelectorAll(".fifth-tabs-tablist-tab");
 const content = document.querySelectorAll(".fifth-tabs-content__text");

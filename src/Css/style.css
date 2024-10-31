@@ -385,6 +385,17 @@ main .swiper .sixth {
   background-repeat: no-repeat;
   background-size: cover;
 }
+main .swiper .sixth .swiper-slide-prev img, main .swiper .sixth .swiper-slide-next img {
+  transition: transform 0.3s;
+  transform: scale(0.7) !important;
+}
+main .swiper .sixth .swiper-slide img {
+  transition: transform 0.3s;
+  transform: scale(0.3);
+}
+main .swiper .sixth .swiper-slide-active img {
+  transform: scale(1);
+}
 main .swiper .seventh {
   background: #090B19 url("../Image/img/background-seventh.png");
   background-repeat: no-repeat;

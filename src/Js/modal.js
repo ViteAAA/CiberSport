@@ -6,13 +6,22 @@ inputCont.forEach(item => item.querySelector('#email-field').addEventListener('b
     item.querySelector('.placeholder').style.color = 'rgba(255, 255, 255, 0.5)';
 }));
 document.querySelector('.modal-bg').addEventListener("click", function () {    
-    document.querySelector('.modal').classList.add('hidden');
+    document.querySelector('.modal').classList.add('!hidden');
+});
+document.querySelector('.modal-bg-regist').addEventListener("click", function () {    
+    document.querySelector('.regist').classList.add('!hidden');
 });
 document.querySelector('.register').addEventListener("click", function () {    
-    document.querySelector('.modal').classList.remove('hidden');
+    document.querySelector('.regist').classList.remove('!hidden');
+});
+document.querySelector('.login').addEventListener("click", function () {    
+    document.querySelector('.modal').classList.remove('!hidden');
 });
 document.querySelector('.modal-block__close').addEventListener("click", function () {    
-    document.querySelector('.modal').classList.add('hidden');
+    document.querySelector('.regist').classList.add('!hidden');
+});
+document.querySelector('.modal-block__close-logo').addEventListener("click", function () {    
+    document.querySelector('.modal').classList.add('!hidden');
 });
 
 //add invalid for inputs

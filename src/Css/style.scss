@@ -397,6 +397,29 @@ main {
             background: #0E101E url('../Image/img/background-sixth.png');
             background-repeat: no-repeat;
             background-size: cover;
+            .swiper-slide-prev, .swiper-slide-next {
+                img {
+                    // width: 200px;
+                    // height: 300px;
+                    transition: transform 0.3s;
+                    transform: scale(0.7) !important;
+                }
+                
+            }
+            .swiper-slide {
+                img {
+                    // width: 200px;
+                    // height: 300px;
+                    transition: transform 0.3s;
+                    transform: scale(0.3);
+                }
+                
+            }
+            .swiper-slide-active {
+                img {
+                    transform: scale(1.0);
+                }
+            }
         }
         .seventh {
             background: #090B19 url('../Image/img/background-seventh.png');
