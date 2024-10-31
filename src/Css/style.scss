@@ -398,27 +398,44 @@ main {
             background-repeat: no-repeat;
             background-size: cover;
             .swiper-slide-prev, .swiper-slide-next {
-                img {
-                    // width: 200px;
-                    // height: 300px;
-                    transition: transform 0.3s;
-                    transform: scale(0.7) !important;
-                }
-                
+                transition: transform 0.3s;
+                transform: scale(0.7) !important;
+                filter: blur(4px) !important;
             }
             .swiper-slide {
-                img {
-                    // width: 200px;
-                    // height: 300px;
-                    transition: transform 0.3s;
-                    transform: scale(0.3);
-                }
+                transition: transform 0.3s;
+                transform: scale(0.3);
+                filter: blur(8px);
                 
             }
             .swiper-slide-active {
+                transform: scale(1.0);
                 img {
-                    transform: scale(1.0);
+                    filter: blur(0);
                 }
+                filter: blur(0);
+            }
+            &__title {
+                font-family: "Raleway", sans-serif;
+                font-weight: 600;
+                font-size: 46px;
+                line-height: 150%;
+                text-align: center;
+                color: #fff;
+            }
+            &__subtitle {
+                font-family: "Raleway", sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 150%;
+                text-align: center;
+                color: #fff;
+                opacity: 0.75;
+                max-width: 825px;
+            }
+            .sixth__next::after, .sixth__prev::after {
+                color: white;
+                font-size: 13px;
             }
         }
         .seventh {

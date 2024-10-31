@@ -63,6 +63,7 @@ var cards = new Swiper(".cards", {
   spaceBetween: 30,
   loop: true,
   centeredSlides: true,
+  allowTouchMove: false,
   navigation: {
     nextEl: ".sixth__next",
     prevEl: ".sixth__prev",

@@ -385,16 +385,44 @@ main .swiper .sixth {
   background-repeat: no-repeat;
   background-size: cover;
 }
-main .swiper .sixth .swiper-slide-prev img, main .swiper .sixth .swiper-slide-next img {
+main .swiper .sixth .swiper-slide-prev, main .swiper .sixth .swiper-slide-next {
   transition: transform 0.3s;
   transform: scale(0.7) !important;
+  filter: blur(4px) !important;
 }
-main .swiper .sixth .swiper-slide img {
+main .swiper .sixth .swiper-slide {
   transition: transform 0.3s;
   transform: scale(0.3);
+  filter: blur(8px);
+}
+main .swiper .sixth .swiper-slide-active {
+  transform: scale(1);
+  filter: blur(0);
 }
 main .swiper .sixth .swiper-slide-active img {
-  transform: scale(1);
+  filter: blur(0);
+}
+main .swiper .sixth__title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 150%;
+  text-align: center;
+  color: #fff;
+}
+main .swiper .sixth__subtitle {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #fff;
+  opacity: 0.75;
+  max-width: 825px;
+}
+main .swiper .sixth .sixth__next::after, main .swiper .sixth .sixth__prev::after {
+  color: white;
+  font-size: 13px;
 }
 main .swiper .seventh {
   background: #090B19 url("../Image/img/background-seventh.png");
