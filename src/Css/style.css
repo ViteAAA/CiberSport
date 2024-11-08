@@ -395,9 +395,51 @@ main .swiper .sixth .swiper-slide {
   transform: scale(0.3);
   filter: blur(8px);
 }
+main .swiper .sixth .swiper-slide .sixth-cards-components {
+  display: none;
+}
 main .swiper .sixth .swiper-slide-active {
   transform: scale(1);
   filter: blur(0);
+}
+main .swiper .sixth .swiper-slide-active .sixth-cards-components {
+  display: block !important;
+}
+main .swiper .sixth .swiper-slide-active .sixth-cards-components .sixth-cards-components__logo {
+  width: 47.7% !important;
+  height: 31%;
+  top: 38px;
+  left: 53px;
+}
+main .swiper .sixth .swiper-slide-active .sixth-cards-components .sixth-cards-components__search {
+  width: 13.313% !important;
+  height: 9.014%;
+  top: 33px;
+  left: 53px;
+}
+main .swiper .sixth .swiper-slide-active .sixth-cards-components .sixth-cards-components__csgo {
+  width: 13.313% !important;
+  height: 9.014%;
+  top: 59px;
+  left: 17px;
+}
+main .swiper .sixth .swiper-slide-active .sixth-cards-components .sixth-cards-components__mouse {
+  width: 13.313% !important;
+  height: 9.014%;
+  top: 88px;
+  left: 17px;
+}
+main .swiper .sixth .swiper-slide-active .sixth-cards-components .sixth-cards-components__support {
+  width: 13.313% !important;
+  height: 9.014%;
+  top: 93px;
+  left: 103px;
+}
+main .swiper .sixth .swiper-slide-active .sixth-cards-components .sixth-cards-components__rus {
+  width: 19.117% !important;
+  height: 22.61%;
+  top: 143px;
+  left: 13px;
 }
 main .swiper .sixth .swiper-slide-active img {
   filter: blur(0);
