@@ -406,10 +406,10 @@ main .swiper .sixth .swiper-slide-active .sixth-cards-components {
   display: block !important;
 }
 main .swiper .sixth .swiper-slide-active .sixth-cards-components .sixth-cards-components__logo {
-  width: 47.7% !important;
-  height: 31%;
-  top: 38px;
-  left: 53px;
+  width: 52% !important;
+  height: 32%;
+  top: 37px;
+  left: 50px;
 }
 main .swiper .sixth .swiper-slide-active .sixth-cards-components .sixth-cards-components__search {
   width: 13.313% !important;
@@ -440,6 +440,42 @@ main .swiper .sixth .swiper-slide-active .sixth-cards-components .sixth-cards-co
   height: 22.61%;
   top: 143px;
   left: 13px;
+}
+main .swiper .sixth .swiper-slide-active .sixth-cards-components .sixth-cards-components__league {
+  width: 13.313% !important;
+  height: 9.014%;
+  top: 171px;
+  left: 17px;
+}
+main .swiper .sixth .swiper-slide-active .sixth-cards-components .sixth-cards-components__player {
+  width: 16.726% !important;
+  height: 14.735%;
+  top: 155px;
+  left: 48px;
+}
+main .swiper .sixth .swiper-slide-active .sixth-cards-components .sixth-cards-components__kd {
+  width: 16.726% !important;
+  height: 14.735%;
+  top: 155px;
+  left: 81px;
+}
+main .swiper .sixth .swiper-slide-active .sixth-cards-components .sixth-cards-components__percent {
+  width: 16.726% !important;
+  height: 14.735%;
+  top: 155px;
+  left: 115px;
+}
+main .swiper .sixth .swiper-slide-active .sixth-cards-components .sixth-cards-components__nine {
+  width: 9.253% !important;
+  height: 9.287%;
+  top: 31px;
+  left: 20px;
+}
+main .swiper .sixth .swiper-slide-active .sixth-cards-components .sixth-cards-components__cyspnet {
+  width: 35.488% !important;
+  height: 9.646%;
+  top: 119px;
+  left: 52px;
 }
 main .swiper .sixth .swiper-slide-active img {
   filter: blur(0);
