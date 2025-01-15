@@ -121,6 +121,7 @@ header .register {
 
 .act {
   border: 2px solid #fff;
+  border-bottom: none;
   opacity: 1 !important;
   border-radius: 15px 15px 0 0;
 }
