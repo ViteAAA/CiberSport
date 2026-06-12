@@ -1,4 +1,4 @@
-var swiper = new Swiper(".mySwiper", {
+let swiper = new Swiper(".mySwiper", {
     direction: "vertical",
     mousewheel: true,
     pagination: {
@@ -8,7 +8,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 // users slider
-var users = new Swiper(".users", {
+let users = new Swiper(".users", {
     cssMode: true,
     direction: "horizontal",
     navigation: {
@@ -20,7 +20,7 @@ var users = new Swiper(".users", {
     },
 });
 // organizations slider
-var org = new Swiper(".org", {
+let org = new Swiper(".org", {
   cssMode: true,
   direction: "horizontal",
   navigation: {
@@ -32,7 +32,7 @@ var org = new Swiper(".org", {
   },
 });
 //comands and clubs
-var clubs = new Swiper(".clubs", {
+let clubs = new Swiper(".clubs", {
   cssMode: true,
   direction: "horizontal",
   navigation: {
@@ -44,7 +44,7 @@ var clubs = new Swiper(".clubs", {
   },
 });
 //arena
-var arena = new Swiper(".arena", {
+let arena = new Swiper(".arena", {
   cssMode: true,
   direction: "horizontal",
   navigation: {
@@ -58,7 +58,7 @@ var arena = new Swiper(".arena", {
 
 //cards
 
-var cards = new Swiper(".cards", {
+let cards = new Swiper(".cards", {
   slidesPerView: 5,
   spaceBetween: 30,
   loop: true,
@@ -179,7 +179,7 @@ titles.forEach(item => item.addEventListener("click", function() {
 }));
 
 //To Slide For Header
-let item = document.querySelectorAll('#mass');
+let item = document.querySelectorAll('.mass');
 item.forEach(element => element.addEventListener("click", function() {
   let i = 0;
   for (let index = 0; index < item.length; index++) {

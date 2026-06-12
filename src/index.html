@@ -16,174 +16,179 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="modal relative !hidden">
-        
-        <div class="modal-bg w-full h-full absolute top-0 left-0 -z-10"></div>
-        <div class="modal-block-login relative">
-            <div class="modal-block-send absolute left-[8%] -top-28  rounded-2xl hidden">
-                <h1>
-                    На указанный адрес отправлено письмо с подтверждением
-                    <span>Перейдите по ссылке в письме, чтобы привязать адрес к вашему аккаунту</span>
-                </h1>
-            </div>
-            <img src="Image/Logo/close.svg" alt="close" class="modal-block__close-logo absolute right-[50px] top-[50px] cursor-pointer">
-            <div class="modal-block-container">
-                <h2 class="modal-block__title">
-                    Войти с помощью сервисов:
-                </h2>
-                <div class="modal-block-contacts flex">
-                    <a href="#" class="modal-block-contacts-href">
-                        <img src="Image/logo/modal-discord.svg" alt="modal-discord" class="modal-block-contacts-href__img">
-                    </a>
-                    <a href="#" class="modal-block-contacts-href">
-                        <img src="Image/logo/modal-google.svg" alt="modal-google" class="modal-block-contacts-href__img">
-                    </a>
-                    <a href="#" class="modal-block-contacts-href">
-                        <img src="Image/logo/modal-vk.svg" alt="modal-vk" class="modal-block-contacts-href__img">
-                    </a>
-                    <a href="#" class="modal-block-contacts-href">
-                        <img src="Image/logo/modal-steam.svg" alt="modal-steam" class="modal-block-contacts-href__img">
-                    </a>
+    <!--Modal windows-->
+    <section>
+        <div class="modal relative !hidden">
+            
+            <div class="modal-bg w-full h-full absolute top-0 left-0 -z-10"></div>
+            <div class="modal-block-login relative">
+                <div class="modal-block-send absolute left-[8%] -top-28  rounded-2xl hidden">
+                    <h1>
+                        На указанный адрес отправлено письмо с подтверждением
+                        <span>Перейдите по ссылке в письме, чтобы привязать адрес к вашему аккаунту</span>
+                    </h1>
                 </div>
-                <h2 class="modal-block__or mt-7">
-                    Или
-                </h2>
-                <div class="custom-field-login">
-                    <input id="email-field" type="email" name="email-field">
-                    <label for="email-field" class="placeholder">Электронная почта</label>
-                </div>
-                <div class="custom-field-login">
-                    <input id="email-field" type="password" name="email-field">
-                    <label for="email-field" class="placeholder">Пароль</label>
-                </div>
-                <div class="checkbox-field relative pl-7">
-                    <div class="custom-checkbox-cont">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" id="checkbox">
-                            <div class="checkbox-box"></div>
+                <img src="Image/Logo/close.svg" alt="close" class="modal-block__close-logo absolute right-[50px] top-[50px] cursor-pointer">
+                <div class="modal-block-container">
+                    <h2 class="modal-block__title">
+                        Войти с помощью сервисов:
+                    </h2>
+                    <div class="modal-block-contacts flex">
+                        <a href="#" class="modal-block-contacts-href">
+                            <img src="Image/logo/modal-discord.svg" alt="modal-discord" class="modal-block-contacts-href__img">
+                        </a>
+                        <a href="#" class="modal-block-contacts-href">
+                            <img src="Image/logo/modal-google.svg" alt="modal-google" class="modal-block-contacts-href__img">
+                        </a>
+                        <a href="#" class="modal-block-contacts-href">
+                            <img src="Image/logo/modal-vk.svg" alt="modal-vk" class="modal-block-contacts-href__img">
+                        </a>
+                        <a href="#" class="modal-block-contacts-href">
+                            <img src="Image/logo/modal-steam.svg" alt="modal-steam" class="modal-block-contacts-href__img">
+                        </a>
+                    </div>
+                    <h2 class="modal-block__or mt-7">
+                        Или
+                    </h2>
+                    <div class="custom-field-login">
+                        <input id="email-field" type="email" name="email-field">
+                        <label for="email-field" class="placeholder">Электронная почта</label>
+                    </div>
+                    <div class="custom-field-login">
+                        <input id="email-field" type="password" name="email-field">
+                        <label for="email-field" class="placeholder">Пароль</label>
+                    </div>
+                    <div class="checkbox-field relative pl-7">
+                        <div class="custom-checkbox-cont">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="checkbox-box"></div>
+                            </label>
+                        </div>
+                        <label for="checkbox" class="checkbox-field__text ">
+                            Чужой компьютер 
                         </label>
                     </div>
-                    <label for="checkbox" class="checkbox-field__text ">
-                        Чужой компьютер 
-                    </label>
+                    <button class="modal-button">
+                        Войти
+                    </button>
+                    <p class="modal-acc">
+                        Нет аккаунта? <span>Создать</span>
+                    </p>
                 </div>
-                <button class="modal-button">
-                    Войти
-                </button>
-                <p class="modal-acc">
-                    Нет аккаунта? <span>Создать</span>
-                </p>
             </div>
         </div>
-    </div>
-    <div class="modal regist relative !hidden">
-        
-        <div class="modal-bg-regist w-full h-full absolute top-0 left-0 -z-10"></div>
-        <div class="modal-block relative">
-            <div class="modal-block-send absolute left-[8%] -top-28  rounded-2xl hidden">
-                <h1>
-                    На указанный адрес отправлено письмо с подтверждением
-                    <span>Перейдите по ссылке в письме, чтобы привязать адрес к вашему аккаунту</span>
-                </h1>
-            </div>
-            <img src="Image/Logo/close.svg" alt="close" class="modal-block__close absolute right-[50px] top-[50px] cursor-pointer">
-            <div class="modal-block-container">
-                <h2 class="modal-block__title">
-                    Войти с помощью сервисов:
-                </h2>
-                <div class="modal-block-contacts flex">
-                    <a href="#" class="modal-block-contacts-href">
-                        <img src="Image/logo/modal-discord.svg" alt="modal-discord" class="modal-block-contacts-href__img">
-                    </a>
-                    <a href="#" class="modal-block-contacts-href">
-                        <img src="Image/logo/modal-google.svg" alt="modal-google" class="modal-block-contacts-href__img">
-                    </a>
-                    <a href="#" class="modal-block-contacts-href">
-                        <img src="Image/logo/modal-vk.svg" alt="modal-vk" class="modal-block-contacts-href__img">
-                    </a>
-                    <a href="#" class="modal-block-contacts-href">
-                        <img src="Image/logo/modal-steam.svg" alt="modal-steam" class="modal-block-contacts-href__img">
-                    </a>
+        <div class="modal regist relative !hidden">
+            
+            <div class="modal-bg-regist w-full h-full absolute top-0 left-0 -z-10"></div>
+            <div class="modal-block relative">
+                <div class="modal-block-send absolute left-[8%] -top-28  rounded-2xl hidden">
+                    <h1>
+                        На указанный адрес отправлено письмо с подтверждением
+                        <span>Перейдите по ссылке в письме, чтобы привязать адрес к вашему аккаунту</span>
+                    </h1>
                 </div>
-                <h2 class="modal-block__or mt-7">
-                    Или
-                </h2>
-                <div class="custom-field">
-                    <input id="email-field" type="text" name="email-field" minlength="3" maxlength="24" pattern="[a-zA-Z]*">
-                    <label for="email-field" class="placeholder">Никнейм</label>
-                    <p class="custom-field__rules">
-                        Никнейм должен содержать от 3 до 24 латинских символов. Разрешены "_" ".".
-                    </p>
-                </div>
-                <div class="custom-field">
-                    <input id="email-field" type="email" name="email-field">
-                    <label for="email-field" class="placeholder">Электронная почта</label>
-                </div>
-                <div class="custom-field">
-                    <input id="email-field" type="password" name="email-field" pattern="^(?=.*[a-z])(?=.*[A-Z]).{6,18}$">
-                    <label for="email-field" class="placeholder">Пароль</label>
-                    <p class="custom-field__rules">
-                        Пароль должен состоять от 6 до 18 символов, используя строчный и заглавные буквы A-z
-                    </p>
-                </div>
-                <div class="custom-field">
-                    <input id="email-field" type="password" name="email-field">
-                    <label for="email-field" class="placeholder">Повтор пароля</label>
-                    <p class="custom-field__rules">
-                        Пароли не совпадают
-                    </p>
-                </div>
-                <div class="checkbox-field relative pl-7">
-                    <div class="custom-checkbox-cont">
-                        <label class="custom-checkbox">
-                            <input type="checkbox" id="checkbox">
-                            <div class="checkbox-box"></div>
+                <img src="Image/Logo/close.svg" alt="close" class="modal-block__close absolute right-[50px] top-[50px] cursor-pointer">
+                <div class="modal-block-container">
+                    <h2 class="modal-block__title">
+                        Войти с помощью сервисов:
+                    </h2>
+                    <div class="modal-block-contacts flex">
+                        <a href="#" class="modal-block-contacts-href">
+                            <img src="Image/logo/modal-discord.svg" alt="modal-discord" class="modal-block-contacts-href__img">
+                        </a>
+                        <a href="#" class="modal-block-contacts-href">
+                            <img src="Image/logo/modal-google.svg" alt="modal-google" class="modal-block-contacts-href__img">
+                        </a>
+                        <a href="#" class="modal-block-contacts-href">
+                            <img src="Image/logo/modal-vk.svg" alt="modal-vk" class="modal-block-contacts-href__img">
+                        </a>
+                        <a href="#" class="modal-block-contacts-href">
+                            <img src="Image/logo/modal-steam.svg" alt="modal-steam" class="modal-block-contacts-href__img">
+                        </a>
+                    </div>
+                    <h2 class="modal-block__or mt-7">
+                        Или
+                    </h2>
+                    <div class="custom-field">
+                        <input id="email-field" type="text" name="email-field" minlength="3" maxlength="24" pattern="[a-zA-Z]*">
+                        <label for="email-field" class="placeholder">Никнейм</label>
+                        <p class="custom-field__rules">
+                            Никнейм должен содержать от 3 до 24 латинских символов. Разрешены "_" ".".
+                        </p>
+                    </div>
+                    <div class="custom-field">
+                        <input id="email-field" type="email" name="email-field">
+                        <label for="email-field" class="placeholder">Электронная почта</label>
+                    </div>
+                    <div class="custom-field">
+                        <input id="email-field" type="password" name="email-field" pattern="^(?=.*[a-z])(?=.*[A-Z]).{6,18}$">
+                        <label for="email-field" class="placeholder">Пароль</label>
+                        <p class="custom-field__rules">
+                            Пароль должен состоять от 6 до 18 символов, используя строчный и заглавные буквы A-z
+                        </p>
+                    </div>
+                    <div class="custom-field">
+                        <input id="email-field" type="password" name="email-field">
+                        <label for="email-field" class="placeholder">Повтор пароля</label>
+                        <p class="custom-field__rules">
+                            Пароли не совпадают
+                        </p>
+                    </div>
+                    <div class="checkbox-field relative pl-7">
+                        <div class="custom-checkbox-cont">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="checkbox-box"></div>
+                            </label>
+                        </div>
+                        <label for="checkbox" class="checkbox-field__text ">
+                            Я согласен с <a href="#">правилами пользования</a> и <a href="#">политикой конфиденциальности</a>
                         </label>
                     </div>
-                    <label for="checkbox" class="checkbox-field__text ">
-                        Я согласен с <a href="#">правилами пользования</a> и <a href="#">политикой конфиденциальности</a>
-                    </label>
+                    <button class="modal-button">
+                        Зарегистрироваться
+                    </button>
+                    <p class="modal-acc">
+                        Есть аккаунт? <span>Войти</span>
+                    </p>
                 </div>
-                <button class="modal-button">
-                    Зарегистрироваться
-                </button>
-                <p class="modal-acc">
-                    Есть аккаунт? <span>Войти</span>
-                </p>
             </div>
         </div>
-    </div>
+        <!--end Modal windows-->
+    </section>
+
     <header>
         <div class="container flex items-center">
             <a href="#" class="logo-href"><img src="Image/Logo/Logo.svg" alt="Logo" class="logo"></a>
             <ul class="list flex justify-between items-center ml-20 py-5">
                 <li class="list-point">
-                    <a href="#" class="list-point__href" id="mass"> 
+                    <a href="#" class="list-point__href mass"> 
                         Главная
                     </a>
                 </li>
                 <li class="list-point">
-                    <a href="#" class="list-point__href" id="mass">
+                    <a href="#" class="list-point__href mass">
                         О проекте
                     </a>
                 </li>
                 <li class="list-point">
-                    <a href="#" class="list-point__href" id="mass">
+                    <a href="#" class="list-point__href mass">
                         Возможности
                     </a>
                 </li>
                 <li class="list-point">
-                    <a href="#" class="list-point__href" id="mass">
+                    <a href="#" class="list-point__href mass">
                         Карточки
                     </a>
                 </li>
                 <li class="list-point">
-                    <a href="#" class="list-point__href" id="mass">
+                    <a href="#" class="list-point__href mass">
                         Статистика
                     </a>
                 </li>
                 <li class="list-point">
-                    <a href="#" class="list-point__href" id="mass">
+                    <a href="#" class="list-point__href mass">
                         FAQ
                     </a>
                 </li>

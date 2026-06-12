@@ -78,6 +78,10 @@ header {
         li:last-child {
             margin-right: 0;
         }
+
+        @media (max-width: 960px) {
+            display: none !important;
+        }
     }
     .login {
         font-family: "Raleway", sans-serif;
